@@ -1,0 +1,58 @@
+{
+  "indicators": [
+    {"name": "나스닥100", "ticker": "^NDX"},
+    {"name": "필라델피아반도체(SOX)", "ticker": "^SOX"},
+    {"name": "엔비디아", "ticker": "NVDA"},
+    {"name": "테슬라", "ticker": "TSLA"},
+    {"name": "애플", "ticker": "AAPL"},
+    {"name": "미국전력(XLU)", "ticker": "XLU"},
+    {"name": "미국방산(ITA)", "ticker": "ITA"},
+    {"name": "WTI유가", "ticker": "CL=F"},
+    {"name": "미국채10년물", "ticker": "^TNX", "divide_by": 10},
+    {"name": "VIX", "ticker": "^VIX"},
+    {"name": "원달러환율", "ticker": "KRW=X"}
+  ],
+  "trend_days": 3,
+
+  "watchlist": [
+    {"name": "SK하이닉스", "sector": "반도체"},
+    {"name": "한미반도체", "sector": "반도체"},
+    {"name": "삼성전자", "sector": "반도체"},
+    {"name": "이수페타시스", "sector": "반도체"},
+    {"name": "한화에어로스페이스", "sector": "방산"},
+    {"name": "LIG넥스원", "sector": "방산"},
+    {"name": "현대로템", "sector": "방산"},
+    {"name": "HD현대일렉트릭", "sector": "전력기기"},
+    {"name": "한전기술", "sector": "전력기기"},
+    {"name": "두산에너빌리티", "sector": "전력기기"},
+    {"name": "NAVER", "sector": "인터넷/AI"},
+    {"name": "현대차", "sector": "자동차"},
+    {"name": "기아", "sector": "자동차"},
+    {"name": "HD현대중공업", "sector": "조선"}
+  ],
+
+  "kr_rss_feeds": [
+    "https://www.hankyung.com/feed/finance",
+    "https://www.hankyung.com/feed/economy"
+  ],
+  "us_rss_feeds": [
+    "https://finance.yahoo.com/news/rssindex",
+    "https://www.investing.com/rss/news.rss"
+  ],
+  "news_lookback_days": 3,
+
+  "catalyst_whitelist": [
+    "자사주 매입", "자사주 소각", "소각 결정", "대형 수주", "공급계약", "공급 계약",
+    "수주 공시", "지분 맞교환", "지분교환", "조 단위 수주", "실적 가이던스 상향",
+    "목표가 상향", "조단위 계약", "최대 수주", "역대 최대", "수주 계약"
+  ],
+  "catalyst_blacklist": [
+    "MOU", "양해각서", "검토", "추진", "기대감", "전망", "예상", "관측", "루머"
+  ],
+
+  "us_keywords": [
+    "Fed", "rate cut", "rate hike", "tariff", "export control", "chip", "semiconductor",
+    "guidance", "buyback", "stock split", "earnings beat", "record revenue",
+    "capex", "data center", "AI spending"
+  ]
+}
