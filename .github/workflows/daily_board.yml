@@ -1,0 +1,38 @@
+name: Morning Trend Board
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 매일 07:00 KST (전날 22:00 UTC)
+  workflow_dispatch: {}      # 그 외 시간엔 Actions 탭에서 수동 실행
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 보드 생성
+        run: python main.py
+
+      - name: GitHub Pages용 결과물 복사
+        run: |
+          mkdir -p docs
+          cp output/index.html docs/index.html
+
+      - name: docs/ 변경분만 커밋
+        run: |
+          git config user.name "trend-board-bot"
+          git config user.email "trend-board-bot@users.noreply.github.com"
+          git add docs/index.html
+          git diff --cached --quiet || git commit -m "trend board update $(date -u +%F)"
+          git push
