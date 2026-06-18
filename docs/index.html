@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모닝 트렌드 보드 — 2026-06-18 23:23 KST</title>
+<link rel="stylesheet" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --bg:#0a0d0f; --panel:#11181b; --panel-border:#1f2e31;
+    --text-primary:#d7e6e4; --text-dim:#6b8482;
+    --accent-phosphor:#3ddc97;
+    --up-red:#ff6b6b; --down-blue:#5b9bd5; --neutral-gray:#56666a;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+    --sans:'Pretendard', -apple-system, sans-serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:24px; background:var(--bg); color:var(--text-primary); font-family:var(--sans); }
+  .shell { max-width:820px; margin:0 auto; }
+  .header { display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--panel-border); padding-bottom:12px; margin-bottom:20px; }
+  .title { font-family:var(--mono); font-size:14px; letter-spacing:2px; color:var(--accent-phosphor); text-transform:uppercase; }
+  .time { font-family:var(--mono); font-size:12px; color:var(--text-dim); }
+  .section-label { font-family:var(--mono); font-size:11px; letter-spacing:1.5px; color:var(--text-dim); text-transform:uppercase; margin:28px 0 10px; }
+  .ind-row { display:flex; justify-content:space-between; align-items:center; padding:10px 12px; background:var(--panel); border:1px solid var(--panel-border); border-radius:4px; margin-bottom:6px; }
+  .ind-name { font-size:13px; }
+  .ind-trend { display:flex; gap:8px; }
+  .chip { font-family:var(--mono); font-size:13px; font-weight:600; min-width:60px; text-align:right; }
+  .chip-na { color:var(--text-dim); }
+  .news-card { display:block; background:var(--panel); border:1px solid var(--panel-border); border-left:3px solid var(--accent-phosphor); border-radius:4px; padding:10px 14px; margin-bottom:8px; text-decoration:none; color:var(--text-primary); }
+  .news-meta { font-family:var(--mono); font-size:11px; color:var(--text-dim); margin-bottom:4px; }
+  .news-tag { color:var(--accent-phosphor); margin-left:6px; }
+  .news-title { font-size:13px; line-height:1.4; }
+  .empty-state { color:var(--text-dim); font-size:13px; padding:14px; background:var(--panel); border:1px dashed var(--panel-border); border-radius:4px; }
+  .disclaimer { margin-top:28px; padding-top:14px; border-top:1px solid var(--panel-border); font-size:11px; color:var(--text-dim); line-height:1.6; }
+</style>
+</head>
+<body>
+  <div class="shell">
+    <div class="header">
+      <div class="title">Morning Trend Board</div>
+      <div class="time">2026-06-18 23:23 KST 갱신 (1일 1회)</div>
+    </div>
+
+    <div class="section-label">미국 지표 — 최근 3거래일 등락 (좌:오래된순 → 우:최신)</div>
+    
+        <div class="ind-row">
+          <div class="ind-name">나스닥100</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-1.89%</span><span class="chip" style="color:var(--down-blue)">-0.99%</span><span class="chip" style="color:var(--up-red)">+2.13%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">필라델피아반도체(SOX)</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-5.71%</span><span class="chip" style="color:var(--up-red)">+1.38%</span><span class="chip" style="color:var(--up-red)">+5.90%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">엔비디아</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-2.37%</span><span class="chip" style="color:var(--down-blue)">-1.33%</span><span class="chip" style="color:var(--up-red)">+2.38%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">테슬라</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-1.58%</span><span class="chip" style="color:var(--down-blue)">-2.05%</span><span class="chip" style="color:var(--down-blue)">-1.30%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">애플</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--up-red)">+0.95%</span><span class="chip" style="color:var(--down-blue)">-1.10%</span><span class="chip" style="color:var(--up-red)">+0.95%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">미국전력(XLU)</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--up-red)">+0.72%</span><span class="chip" style="color:var(--down-blue)">-1.33%</span><span class="chip" style="color:var(--up-red)">+0.81%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">미국방산(ITA)</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--up-red)">+0.89%</span><span class="chip" style="color:var(--up-red)">+1.37%</span><span class="chip" style="color:var(--down-blue)">-1.17%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">WTI유가</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-5.82%</span><span class="chip" style="color:var(--up-red)">+0.97%</span><span class="chip" style="color:var(--down-blue)">-4.84%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">미국채10년물</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--down-blue)">-1.74%</span><span class="chip" style="color:var(--up-red)">+0.54%</span><span class="chip" style="color:var(--down-blue)">-1.09%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">VIX</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--up-red)">+1.30%</span><span class="chip" style="color:var(--up-red)">+12.37%</span><span class="chip" style="color:var(--down-blue)">-6.89%</span></div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-name">원달러환율</div>
+          <div class="ind-trend"><span class="chip" style="color:var(--up-red)">+0.25%</span><span class="chip" style="color:var(--down-blue)">-0.16%</span><span class="chip" style="color:var(--up-red)">+1.60%</span></div>
+        </div>
+
+    <div class="section-label">미국 뉴스 (최근 3일, 키워드 필터)</div>
+    
+            <a class="news-card" href="https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobless-claims-intel-stock-intc-trump/?src=A00220&yptr=yahoo" target="_blank" rel="noopener">
+              <div class="news-meta">06/18 22:44 </div>
+              <div class="news-title">Stock Market Today: Dow Brushes Off Fed, Rises After Jobless Claims; Trump Spurs Intel Shares (Live Coverage)</div>
+            </a>
+            <a class="news-card" href="https://finance.yahoo.com/economy/policy/articles/federal-affects-mortgage-rates-215923595.html" target="_blank" rel="noopener">
+              <div class="news-meta">06/18 22:29 </div>
+              <div class="news-title">How does the Federal Reserve affect mortgages?</div>
+            </a>
+            <a class="news-card" href="https://www.investors.com/news/technology/accenture-stock-acn-stock-accenture-earnings-q3-2026/?src=A00220&yptr=yahoo" target="_blank" rel="noopener">
+              <div class="news-meta">06/18 21:55 </div>
+              <div class="news-title">Accenture Plunges On Fiscal Q3 Sales Miss, Weak Guidance Amid AI Transition</div>
+            </a>
+            <a class="news-card" href="https://www.investors.com/news/ge-vernova-arcosa-data-center-construction-ai-artificial-intelligence/?src=A00220&yptr=yahoo" target="_blank" rel="noopener">
+              <div class="news-meta">06/18 21:46 </div>
+              <div class="news-title">GE Vernova Supplier Near Breakout As Data Centers Lift Construction Sector</div>
+            </a>
+            <a class="news-card" href="https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-climb-with-focus-on-iran-deal-fed-hike-path-230530576.html" target="_blank" rel="noopener">
+              <div class="news-meta">06/18 08:05 </div>
+              <div class="news-title">Stock market today: Dow, S&P 500, Nasdaq climb with focus on Iran deal, Fed hike path</div>
+            </a>
+
+    <div class="section-label">한국 카탈리스트 — 한국경제 RSS (최근 3일)</div>
+    <div class="empty-state">최근 기간 내 조건을 충족하는 항목이 없습니다.</div>
+
+    <div class="disclaimer">
+      본 화면은 매수·매도 추천이 아니며 시나리오 판정이나 신뢰도 점수를 매기지 않습니다.
+      추세인지 노이즈인지에 대한 판단과 최종 투자 결정은 전적으로 본인이 합니다.
+      모든 데이터는 yfinance·한국경제 RSS·Yahoo Finance·Investing.com 공개 데이터를 그대로 정리한 것입니다.
+    </div>
+  </div>
+</body>
+</html>
